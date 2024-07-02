@@ -1,12 +1,15 @@
 h1 {
-  color: red;
+    color: red !important;
 }
 
-.para1 {
-  color: blue;
-  font-size: 1.5em;
+.head2 {
+color: blue;
 }
 
-#uniquePara {
-  color: yellow;
+#headID{
+color: green;
 }
+
+/* #add{
+color: yellow;
+} */
