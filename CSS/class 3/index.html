@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* .two{
+            color: red;
+            font-size: 1.5em;
+        } */
+
+      ul > .two {
+        color: red;
+        font-size: 1.5em;
+      }
+
+      /* .para{
+        background-color: blue;
+      } */
+
+      /* .para + p {
+        background-color: red;
+      } */
+      /* 
+      .para ~ p {
+        background-color: green;
+      } */
+
+      .parent :nth-child(2){
+        background-color: brown;
+        }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>One</li>
+      <li class="two">Two</li>
+      <li>Three</li>
+      <li>Four</li>
+      <li>Five</li>
+    </ul>
+
+    <ol>
+      <li>One</li>
+      <li class="two">Two</li>
+      <li>Three</li>
+      <li>Four</li>
+      <li>Five</li>
+    </ol>
+
+    <div class="parent">
+      <p class="para">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, ipsam
+        quas illum dolore ad enim fugit quo magni exercitationem omnis minima
+        rem asperiores nemo non, voluptatibus repudiandae. Fugit, eveniet quam!
+      </p>
+
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, ipsam
+        quas illum dolore ad enim fugit quo magni exercitationem omnis
+      </p>
+
+      <h1>Header</h1>
+
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam esse
+        enim velit doloremque harum. Illo maxime voluptatum voluptates iusto
+        minus ad saepe cum, consectetur officiis ipsam commodi. Dignissimos, sed
+        ratione!
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam esse
+        enim velit doloremque harum. Illo maxime voluptatum voluptates iusto
+        minus ad saepe cum, consectetur officiis ipsam commodi. Dignissimos, sed
+        ratione!
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam esse
+        enim velit doloremque harum. Illo maxime voluptatum voluptates iusto
+        minus ad saepe cum, consectetur officiis ipsam commodi. Dignissimos, sed
+        ratione!
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam esse
+        enim velit doloremque harum. Illo maxime voluptatum voluptates iusto
+        minus ad saepe cum, consectetur officiis ipsam commodi. Dignissimos, sed
+        ratione!
+      </p>
+    </div>
+  </body>
+</html>
+
+<!-- CSS Combinators -->

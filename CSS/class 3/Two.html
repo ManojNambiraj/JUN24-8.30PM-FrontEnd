@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        transition: 2s;
+
+        /* transform: rotate(45deg); */
+      }
+
+      .box::before {
+        content: "*";
+        width: 200px;
+      }
+
+      .box:hover {
+        background-color: pink;
+        transition: 2s;
+        width: 400px;
+        height: 400px;
+
+        transform: rotate(90deg);
+        border-radius: 50%;
+      }
+
+      a {
+        font-size: 3em;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: green;
+      }
+
+      a:link {
+        color: yellow;
+      }
+
+      a:hover {
+        color: pink;
+      }
+
+      a:active {
+        color: crimson;
+      }
+
+      p::after {
+        content: "Hello: ";
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias,
+      maxime consequuntur. vero veritatis suscipit.
+    </p>
+    <div class="box"></div>
+
+    <a href="index.html">Next</a>
+  </body>
+</html>
