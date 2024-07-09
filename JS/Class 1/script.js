@@ -1,41 +1,42 @@
-// 2009 - 2015 -> ES5 (Ecma script)
-// 2015 - pursuing -> ES6 (Ecma script)
+// varible
 
-// Varibales
-
-// a = 5;
+// a = 10;
 
 // console.log(a);
 
-// Datatypes
+// Datatypes:
 
 /*
 
-    1. number -> 10, 20, 10.5
-    2. string -> "hello"
-    3. boolean -> true, false
-    4. undefind
-    5. null
-    6. Nan -> Not a number
+number -> 10, 5.3
+string -> "hi", "hello"
+boolean -> true, false
+undefined
+null
+Nan
 
 */
 
-// Variable Declaration
+// Versions:
+
+// 2009 - 2015 -> ES5 -> Ecma script
+// 2015 - curr -> ES6
+
+// Scoping:
 
 // var -> ES5
 
 // var a = 10;
 
-// var a = 200;
+// var a = 20;
 
 // console.log(a);
 
-// let -> ES6
+// let
 
+// let b = 50;
 
-// let b;
-
-// b = 20;
+// b = 300;
 
 // b = 500;
 
@@ -43,52 +44,9 @@
 
 // const
 
-// const x = 10;
+// const c = 10;
 
-// x = 100;
-
-// console.log(x);
-
-// Scoping
-
-/* 
-
-    1. Global scope -> var
-    2. Local scope --> let, const
-
-*/
-
-
-
-// {
-
-//     let a = 10;
-//     console.log("inside: ", a);
-// }
-
-// console.log("outside: ", a);
-
-// {
-//     {
-//         {
-//             const a = 5;
-//             {
-//                 {
-//                     {
-//                         {
-//                             console.log(a);
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-//     console.log(a);
-// }
-
-// let a=null;
-
-// console.log(a);
+// console.log(c);
 
 // Operators:
 
@@ -100,22 +58,78 @@
 
     2. Assignment op
 
-    (=, +=, -=, *=, /=, %=)
+    (=, +=, -=, *=, /=, %=, **=)
 
     3. Comparison op
 
-    (==, ===, !=, !==, <, >, <=, >=)
+    (==, ===, !=, !==, >, >=, <, <=)
 
     4. Logical op
+
+    (&&, ||, !)
+
+    &&:
+
+    (true)  && (true)  -> true
+    (true)  && (false) -> false
+    (false) && (true)  -> false
+    (false) && (false) -> false
+
+    ||:
+
+    (true)  || (true)  -> true
+    (true)  || (false) -> true
+    (false) || (true)  -> true
+    (false) || (false) -> false
+
+    !:
+
+    (true) -> false
+    (false) -> true
+    
+
     5. Bitwise op
+
+    (&, |, ~, ^, >>, <<)
+
+    &:
+
+    (1)  & (1)  -> 1
+    (1)  & (0)  -> 0
+    (0)  & (1)  -> 0
+    (0)  & (0)  -> 0
+
+    |:
+
+    (1)  | (1)  -> 1
+    (1)  | (0)  -> 1
+    (0)  | (1)  -> 1
+    (0)  | (0)  -> 0
+
+    ~:
+
+    (1) -> -1
+
+    ^:
+
+    (1)  ^ (1)  -> 0
+    (1)  ^ (0)  -> 1
+    (0)  ^ (1)  -> 1
+    (0)  ^ (0)  -> 0
+
+
     6. Ternary op
+
+    (condition) ? true : false;
+
     7. Type op
 
 */
 
-// 1. Arithmetic op --> (+, -, *, /, %, **, ++, --)
+// 1. Arithmetic op -> (+, -, *, /, %, **, ++, --)
 
 // let a = 10;
+
 // let b = 20;
 
 // let result;
@@ -131,32 +145,70 @@
 
 // console.log(result);
 
-// 2. Assignment op --> (=, +=, -=, *=, /=, %=)
+// 2. Assignment op  -> (=, +=, -=, *=, /=, %=, **=)
 
-// let x = 10;
+// let a = 10;
 
-// x += 5;    // x = x + 5;
-// x -= 5;    // x = x + 5;
-// x *= 5;    // x = x + 5;
-// x /= 5;    // x = x + 5;
-// x %= 5;    // x = x + 5;
+// a += 5;     // a = a + 5;
+// a -= 5;     // a = a - 5;
+// a *= 5;     // a = a * 5;
+// a /= 5;     // a = a / 5;
+// a %= 5;     // a = a % 5;
+// a **= 5;     // a = a ** 5;
 
-// console.log(x);
+// console.log(a);
 
-// 3. Comparison op --> (==, ===, !=, !==, <, >, <=, >=) -> Boolean
+// 3. Comparison op  -> (==, ===, !=, !==, >, >=, <, <=) -> (true, false)
 
-let age = "20";
+// let age = 20;
 
-let result = (age == 20);
-// let result = (age === 20);
-// let result = (age != "20");
-// let result = (age !== 20);
+// let answer;
+
+// answer = (age == 20);
+// answer = (age === 20);
+// answer = (age != 20);
+// answer = (age !== "20");
+// answer = (age >= 18);
+// answer = (age <= 18);
+
+// console.log(answer);
+
+// &&:
+
+// let age = 20;
+
+// let result;
+
+// // result = (age == 20) && (age > 18);
+// result = (age != 20) || (age > 18);
+
+// console.log(!result);
+
+//  5. Bitwise op  -> (&, |, ~, ^, >>, <<)
+
+// let age = 20;
+
+// let result;
+
+// result = (age == 20) & (age > 18);
+// result = (age == 20) | (age < 18);
+// result = (age != 20) ^ (age < 18);
+
+// let a = 7
+
+// result = 7 << 2;
+// result = 7 >> 2;
+
+// console.log(result);
 
 
-// let result = (age > 18);
-// let result = (age >= 18);
-// let result = (age <= 18);
+// (7)   -> 0000 0111
 
+// ((1)) -> 0000 0011
+// ((2)) -> 0000 0001 -> 1
 
+let age = 10;
+
+let result = (age >= 18) ? true : false;
 
 console.log(result);
